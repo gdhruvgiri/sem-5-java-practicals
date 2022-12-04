@@ -1,12 +1,12 @@
 public class Pr12_CountConst {
 	static int count = 0;
 	
-	private CountConst() {
+	private Pr12_CountConst() {
 System.out.println("default Constuctor Called !");
 		count++;
 	}
 
-	CountConst(int value) {
+	Pr12_CountConst(int value) {
 System.out.println("not default Constuctor ! Value is " + value);
 	}
 
@@ -16,11 +16,11 @@ System.out.println("not default Constuctor ! Value is " + value);
 	}
 
 	public static void main(String s[]) {
-		CountConst obj = new CountConst();
-		CountConst obj2 = new CountConst(2);
-		CountConst obj3 = new CountConst();
-		CountConst obj4 = new CountConst();
-		CountConst obj5 = new CountConst(12);
+		Pr12_CountConst obj = new Pr12_CountConst();
+		Pr12_CountConst obj2 = new Pr12_CountConst(2);
+		Pr12_CountConst obj3 = new Pr12_CountConst();
+		Pr12_CountConst obj4 = new Pr12_CountConst();
+		Pr12_CountConst obj5 = new Pr12_CountConst(12);
 
 		obj.allInst();
 	}

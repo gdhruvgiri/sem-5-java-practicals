@@ -2,12 +2,12 @@ public class Pr11_CopyConst {
 
 	int id;
 	String name;
-	CopyConst(int i, String s) {
+	Pr11_CopyConst(int i, String s) {
 		id = i;
 		name = s;
 	}
 
-	CopyConst(CopyConst c) {
+	Pr11_CopyConst(Pr11_CopyConst c) {
 		id = c.id;
 		name = c.name;
 	}
@@ -17,8 +17,8 @@ public class Pr11_CopyConst {
 	}
 
 	public static void main(String s[]) {
-		CopyConst obj = new CopyConst(25,"Dhruvgiri");
-		CopyConst obj2 = new CopyConst(obj);
+		Pr11_CopyConst obj = new Pr11_CopyConst(25,"Dhruvgiri");
+		Pr11_CopyConst obj2 = new Pr11_CopyConst(obj);
 
 		obj.dis();
 		obj2.dis();
